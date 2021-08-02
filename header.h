@@ -14,7 +14,9 @@ typedef struct {
 /* alamat TOP: elemen puncak */
 } Stack;
 
-
+void playGame();
+/* I.S. Program belum berjalan*/
+/* F.S. program menampilkan permainan*/
 void FillSrc(Stack *S);
 /* T.S. sembarang; */
 /* F.S. Membuat sebuah stack S yang kosonq berkapasitas MaxEl */
@@ -26,12 +28,12 @@ boolean IsEmpty (Stack S);
 boolean IsFull(Stack S);
 /* Mengirim true jika tabel penampung nilai elemen stack penuh */
 /*********** Menambahkan sebuah elemen ke Stack **********/
-void Push (Stack *S, infotypeStack X);
+void Push (Stack *S, Stack X);
 /* Menambahkan X sebagai elemen Stack S. */
 /* T.S. S mungkin kosong, tabel penampung elemen stack TTDAK penuh */
 /* F.S. X menjadi TOP yang baru,TOP bertambah 1 */
 /*********** Menqhapus sebuah elemen Stack **********/
-void Pop (Stack *S, infotypeStack *X);
+int Pop (Stack *S, Stack *X);
 /* Menghapus X dari Stack S. */
 /* T.S. S tidak mungkin kosong */
 /* F.S. X adalah nilai elemen TOP yang lama, TOP berkurang l */
@@ -44,7 +46,14 @@ void display();
 /* I.S. S tidak mungkin kosong */
 /* F.S. X adalah nilai elemen level */
 int gameWinCondition();
-/* T.S. S tidak mungkin kosong
+/* T.S. S tidak mungkin kosong*/
 /* F.S. menampilkan kondisi akhir permainan*/
-
-#endif
+void HowToPlay();
+/* I.S. Program belum berjalan*/
+/* F.S. Menampilkan tampilan cara bermain*/
+void RuleOfGame();
+/* I.S. Program belum berjalan*/
+/* F.S. Menampilkan tampilan aturan permainan*/
+void About();
+/* I.S. Program belum berjalan*/
+/* F.S. Menampilkan tampilan cara bermain*/
